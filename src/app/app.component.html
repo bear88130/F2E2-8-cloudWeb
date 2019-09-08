@@ -1,21 +1,332 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container-fluid h-100">
+  <div class="row h-100">
+    <div class="col-2 sidebar">
+      <div class="row" style="flex-direction:column">
+        <div class="col-12">
+          <h2 class="mt-5 text-center">
+            <span style="color: #fff">
+              <i class="fas fa-cloud"></i>
+              MCloud
+            </span>
+          </h2>
+        </div>
 
-<router-outlet></router-outlet>
+        <div class="col-12">
+          <div class="text-center mt-5">
+            <button class="btn rounded-pill px-5 btn-upload">
+              <i class="fas fa-cloud-upload-alt"></i>
+              上傳檔案
+            </button>
+          </div>
+        </div>
+        <div class="col-12">
+          <p class="text-left pl-5 mt-4">
+            <span>
+              <i class="far fa-folder"></i>
+              我的檔案
+            </span>
+          </p>
+          <p class="text-left pl-5 mt-2">
+            <span>
+              <i class="far fa-star"></i>
+              已加星號
+            </span>
+          </p>
+          <p class="text-left pl-5 mt-2">
+            <span>
+              <i class="fas fa-share-alt-square"></i>
+              檔案共享
+            </span>
+          </p>
+          <p class="text-left pl-5 mt-2">
+            <span>
+              <i class="far fa-trash-alt"></i>
+              垃圾桶
+            </span>
+          </p>
+        </div>
+
+      </div>
+
+
+
+      <div class="row align-items-end profile">
+        <div class="col-12">
+          <div class="mx-auto" style="width: 180px">
+              <div class="row">
+                  <div class="col-6">
+                    <img src="./assets/profile_photo.png">
+                  </div>
+                  <div class="col-6">
+                    <p class="my-0" style="font-size:1.5rem">Jennifer</p>
+                    <p>User</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="col-12">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 12%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+          </div>
+          <div class="col-12 text-center">
+              <p>容量 1.2GB / 10GB</p>
+          </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="col-10 px-5">
+        <div class="row justify-content-end mt-5">
+            <div class="col-6">
+                <div class="input-group search">
+                    <div class="input-group-prepend ">
+                      <span class="input-group-text" id="search-span">
+                          <i class="fas fa-search"></i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="搜尋您的檔案">
+                  </div>
+            </div>
+          </div>
+
+          <div class="row mt-4" style=" overflow-y: scroll;height: 600px;">
+            <div class="col-6">
+              <p class="p-1">
+                我的檔案
+              </p>
+            </div>
+            <div class="col-6 text-right">
+                <button type="button" class="btn btn-outline-secondary rounded-pill px-5 f-1">看更多</button>
+            </div>
+
+
+
+            <div class="col-5">
+                <p class="p-2">
+                    名稱
+                  </p>
+            </div>
+            <div class="col-2">
+                <p class="p-2">
+                    上次修改
+                  </p>
+            </div>
+            <div class="col-2">
+                <p class="p-2">
+                    檔案大小
+                  </p>
+            </div>
+            <div class="col-2">
+                <p class="p-2">
+                    擁有者
+                  </p>
+            </div>
+            <div class="col-1">
+            </div>
+
+
+
+            <div class="col-12">
+              <hr class="py-0 my-0"/>
+            </div>
+
+
+
+            <div class="col-5">
+              <p class="p-3">
+                  <i class="far fa-file-video pr-3 yellow"></i>
+                  走吧！一起用日語去旅行.mp4
+                  <i class="fas fa-star yellow ml-3"></i>
+              </p>
+            </div>
+            <div class="col-2">
+              <p class="p-3">2019/6/10</p>
+            </div>
+            <div class="col-2">
+                <p class="p-3">6.5MB</p>
+            </div>
+            <div class="col-2">
+                <p class="p-3">Jennifer</p>
+            </div>
+            <div class="col-1">
+              <p class="p-3">
+                  <i class="fas fa-ellipsis-h"></i>
+              </p>
+            </div>
+
+
+
+            <div class="col-5">
+                <p class="p-3">
+                    <i class="far fa-file-word pr-3 blue"></i>
+                    20191011-1020日本東京自由行.doc
+                </p>
+              </div>
+              <div class="col-2">
+                  <p class="p-3">2019/6/25</p>
+              </div>
+              <div class="col-2">
+                  <p class="p-3">2.3MB</p>
+              </div>
+              <div class="col-2">
+                  <p class="p-3">Jennifer</p>
+              </div>
+              <div class="col-1">
+                  <p class="p-3">
+                      <i class="fas fa-ellipsis-h"></i>
+                  </p>
+              </div>
+
+
+
+              <div class="col-5">
+                  <p class="p-3">
+                      <i class="far fa-file-pdf pr-3 red"></i>
+                      東京都內案內手冊.pdf
+                  </p>
+                </div>
+                <div class="col-2">
+                    <p class="p-3">2019/7/5</p>
+                </div>
+                <div class="col-2">
+                    <p class="p-3">4.6MB</p>
+                </div>
+                <div class="col-2">
+                    <p class="p-3">Jennifer</p>
+                </div>
+                <div class="col-1">
+                    <p class="p-3">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </p>
+                </div>
+
+
+
+                <div class="col-5">
+                    <p class="p-3">
+                        <i class="far fa-image pr-3 green"></i>
+                        成田機場綠色窗口位置.png
+                    </p>
+                  </div>
+                  <div class="col-2">
+                      <p class="p-3">2019/8/10</p>
+                  </div>
+                  <div class="col-2">
+                      <p class="p-3">1.2MB</p>
+                  </div>
+                  <div class="col-2">
+                      <p class="p-3">Jennifer</p>
+                  </div>
+                  <div class="col-1">
+                      <p class="p-3">
+                          <i class="fas fa-ellipsis-h"></i>
+                      </p>
+                  </div>
+
+
+
+                  <div class="col-5">
+                      <p class="p-3">
+                          <i class="fas fa-folder pr-3 blue"></i>
+                          工作相關
+                      </p>
+                    </div>
+                    <div class="col-2">
+                        <p class="p-3">2019/8/30</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="p-3">205MB</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="p-3">Jennifer</p>
+                    </div>
+                    <div class="col-1">
+                        <p class="p-3">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </p>
+                    </div>
+
+
+
+
+
+                    <div class="col-6 mt-5">
+                        <p class="p-1">
+                          檔案共享
+                        </p>
+                      </div>
+                      <div class="col-6 text-right mt-5">
+                          <button type="button" class="btn btn-outline-secondary rounded-pill px-5 f-1">看更多</button>
+                      </div>
+
+
+
+                      <div class="col-5">
+                          <p class="p-2">
+                              名稱
+                            </p>
+                      </div>
+                      <div class="col-2">
+                          <p class="p-2">
+                              上次修改
+                            </p>
+                      </div>
+                      <div class="col-2">
+                          <p class="p-2">
+                              檔案大小
+                            </p>
+                      </div>
+                      <div class="col-2">
+                          <p class="p-2">
+                              擁有者
+                            </p>
+                      </div>
+                      <div class="col-1">
+                      </div>
+
+
+
+                      <div class="col-12">
+                        <hr class="py-0 my-0"/>
+                      </div>
+
+
+
+                      <div class="col-5">
+                        <p class="p-3">
+                            <i class="far fa-file-pdf pr-3 red"></i>
+                            iOS13 Guideline.pdf
+                        </p>
+                      </div>
+                      <div class="col-2">
+                        <p class="p-3">2019/6/5</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="p-3">3.5MB</p>
+                      </div>
+                      <div class="col-2">
+                          <p class="p-3">Ken</p>
+                      </div>
+                      <div class="col-1">
+                        <p class="p-3">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </p>
+                      </div>
+          </div>
+
+
+
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+html,body {
+  height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.sidebar {
+  background-color: #4CB5F5;
+  height: 100%;
+  p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Microsoft JhengHei';
+  }
+}
+
+.profile {
+  height: 150px;
+  margin-top: 10rem;
+
+  img {
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+
+  }
+}
+
+.yellow {
+  color: #FFBA00;
+}
+
+.blue {
+  color:#0096E6;
+}
+
+.red {
+  color: #E2574C;
+}
+
+.green {
+  color: #9CC450;
+}
+
